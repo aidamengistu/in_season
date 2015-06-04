@@ -8,7 +8,7 @@ ProduceApp.controller('ProduceCtrl',['$scope','$routeParams','$http','UserServic
   $scope.searchWord = $routeParams.name;
 
   var req = {
-    url:'http://api.bigoven.com/recipes',
+    url:'//api.bigoven.com/recipes',
     params: {
       title_kw:$routeParams.name,
       pg:$scope.page,

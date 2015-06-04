@@ -13,7 +13,7 @@ $scope.search = function(searchWord){
   $scope.recipesPerPage=20;
 
   var req = {
-    url:'http://api.bigoven.com/recipes',
+    url:'//api.bigoven.com/recipes',
     params: {
       title_kw:$scope.searchWord,
       pg:$scope.page,
