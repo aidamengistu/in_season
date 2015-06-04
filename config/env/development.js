@@ -20,5 +20,17 @@ module.exports = {
   // models: {
   //   connection: 'someMongodbServer'
   // }
+      connections:{
+        myMongoDbServer: {
+            adapter: 'sails-mongo',
+            host: 'localhost',
+            port: 27017,
+            database: 'ProduceAppDev'
+        }
+    },
+    models:{
+        connection: 'myMongoDbServer',
+        migrate: 'alter'
+    }
 
 };
