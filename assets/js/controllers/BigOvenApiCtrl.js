@@ -30,12 +30,6 @@ $scope.search = function(searchWord){
 
 }
 
-// $scope.bestRecipes = function(recipe){
-//   return recipe.StarRating >= 3
-// };
-
-// $scope.showAllProduce = function(){
-
   var req = {
     url:'/api/produce',
     params: {
@@ -44,10 +38,8 @@ $scope.search = function(searchWord){
     }
   };
   $http(req).success(function(allProduce){
-    // console.log(allProduce);
     $scope.produce = allProduce;
   })
-// }
 
 
 

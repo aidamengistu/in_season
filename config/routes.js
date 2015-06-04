@@ -38,6 +38,9 @@ module.exports.routes = {
   'post /api/auth':'AuthController.login',
   'delete /api/auth':'AuthController.logout',
 
+  'post /api/farmersMarketData':'FarmersMarketsController.farmersMarketData',
+  'post /api/farmersMarketFinalData':'FarmersMarketsController.farmersMarketFinalData',
+
   'post /api/recipe':'RecipeController.create',
 
   "get *":{
