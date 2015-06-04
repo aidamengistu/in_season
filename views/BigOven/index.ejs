@@ -9,7 +9,7 @@
           <li><a href="/">Home</a></li>
           <li><a ng-href="/markets">Find a Farmer's Market </a></li>
           <li><a ng-href="/savedRecipes">My Saved Recipes</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="/about">About</a></li>
         </ul>
         <ul class="nav navbar-nav pull-right" >
           <li><a href="#" ng-click="showLogin()" ng-hide="currentUser">Login</a></li>
@@ -22,4 +22,8 @@
 
     </nav>
     <ng-view></ng-view>
+
+    <div class="footer">
+      &copy; 2015 In Season Fresh Fruits and Veggies
+    </div>
   </div>

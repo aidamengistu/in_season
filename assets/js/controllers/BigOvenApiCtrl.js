@@ -8,12 +8,9 @@ $scope.search = function(searchWord){
     $scope.searchWord = searchWord;
   }
 
-  // $scope.apiKey = process.env.BigOven_Key;
-
   $scope.apiKey="dvxdhG8BCOtpB3XK594INq0utY4e1SYc";
   $scope.page=1;
   $scope.recipesPerPage=20;
-  // $scope.searchWord="apples";
 
   var req = {
     url:'http://api.bigoven.com/recipes',

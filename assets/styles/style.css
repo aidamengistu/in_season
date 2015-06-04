@@ -14,135 +14,6 @@ body {
   font-family: 'Vollkorn', serif;
   font-size: 20px;
   background-color: #FAF9F8;
-  /*background-image: url("/images/background2.jpg");*/
-
-}
-/*
-body::after {
-  background-image: url("/images/background2.jpg");
-         background-repeat:repeat;
-            background-position:center;
-            background-attachment:fixed;
-            background-size:cover;
-            opacity: 0.5;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            position: absolute;
-            z-index: -1;
-}*/
-
-
-.NW a {
-  text-decoration: none;
-  color: #655B58;
-}
-
-.NE a {
-  text-decoration: none;
-  color: #655B58;
-}
-
-.SW a {
-  text-decoration: none;
-  color: #655B58;
-}
-
-.SE a {
-  text-decoration: none;
-  color: #655B58;
-}
-
-.NW a:hover {
-  color: #253938;
-}
-
-.NE a:hover {
-  color: #253938;
-}
-
-.SW a:hover {
-  color: #253938;
-}
-
-.SE a:hover {
-  color: #253938;
-}
-
-
-/*These are the four quadrants on the home page - Winter, Spring, Summer and Fall*/
-.NW {
-  /*background-color: #CBCBC1;*/
-  text-align: left;
-  /*position: absolute;*/
-  width: 40%;
-  height: 50%;
-  top:25%;
-  left:10%;
- /* right:50%;
-  bottom:50%;*/
-  border-radius: 10px;
-  /*margin-right: 10px;*/
-  background-image: url("/images/grapefruit.jpg");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-}
-
-.NW img {
-  opacity: 0.2;
-}
-
-.NE {
-  /*background-color: #B6AEA1;*/
-  text-align: left;
-  /*position: absolute;*/
-  width: 40%;
-  height: 50%;
-  top:25%;
-  left:50%;
-  border-radius: 10px;
-  background-image: url("/images/greenBeans.jpg");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-}
-
-.SW {
-  /*background-color: #B6AEA1;*/
-  text-align: left;
-  position: absolute;
-  width: 40%;
-  height: 50%;
-  top:75%;
-  left:10%;
-  border-radius: 10px;
-  background-image: url("/images/berries.jpg");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  /*opacity: 0.2;*/
-}
-
-.SE {
-  /*background-color: #CBCBC1;*/
-  text-align: left;
-  position: absolute;
-  width: 40%;
-  height: 50%;
-  top:75%;
-  left:50%;
-  border-radius: 10px;
-  background-image: url("/images/BrusselsSprouts.jpg");
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-}
-
-#fruitVegList {
-  float: left;
-  width: 33%;
 }
 
 #starRating {
@@ -157,7 +28,10 @@ body::after {
 }
 
 .navbar .navbar-header a{
-  color: #253938;
+  color: #FAF5E3;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  padding-right: 30px;
 }
 
 .navbar-default .navbar-nav li a {
@@ -171,6 +45,11 @@ body::after {
 }
 
 .zipCodeBtn {
+  background-color: #E7512D;
+  color: #F5ECC7;
+}
+
+.loginBtn {
   background-color: #E7512D;
   color: #F5ECC7;
 }
@@ -213,32 +92,166 @@ label {
   color: #F5ECC7;
 }
 
-
-/*body    {  background:#e7e7e7;}
-#box    {  width:300px;
-           height:200px;
-           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
-          border-bottom:2px solid #fff;
-          border-right:2px solid #fff;
-          margin:5% auto 0 auto;
-          background:url("/images/grapefruit.jpg");
+#boxNW {
+  width:550px;
+  height:400px;
+  box-shadow:inset 1px 1px 40px 0 #FDA865;
+  border-bottom:2px solid #fff;
+  border-right:2px solid #fff;
+  margin:5% auto 0 auto;
+  background:url("/images/sweet-potato.jpg");
   background-size:cover;
-border-radius:5px;
-overflow:hidden;}
+  border-radius:5px;
+  overflow:hidden;
+}
 
-#overlay    {  background:rgba(0,0,0,.75);
-               text-align:center;
-               padding:45px 0 66px 0;
-               opacity:0;
-               -webkit-transition: opacity .25s ease;
--moz-transition: opacity .25s ease;}
+#boxNE {
+  width:550px;
+  height:400px;
+  box-shadow:inset 1px 1px 40px 0 #9F194E;
+  border-bottom:2px solid #fff;
+  border-right:2px solid #fff;
+  margin:5% auto 0 auto;
+  background:url("/images/Spring-vegetables.png");
+  background-size:cover;
+  border-radius:5px;
+  overflow:hidden;
+}
 
-#box:hover #overlay {
-               opacity:1;}*/
+#boxSW {
+  width:550px;
+  height:400px;
+  box-shadow:inset 1px 1px 40px 0 #709452;
+  border-bottom:2px solid #fff;
+  border-right:2px solid #fff;
+  margin:5% auto 0 auto;
+  background:url("/images/berries.jpg");
+  background-size:cover;
+  border-radius:5px;
+  overflow:hidden;
+}
 
-/*#plus       {  font-family:Helvetica;
-               font-weight:900;
-               color:rgba(255,255,255,.85);
-               font-size:96px;}*/
+#boxSE {
+  width:550px;
+  height:400px;
+  box-shadow:inset 1px 1px 40px 0 #F7C74E;
+  border-bottom:2px solid #fff;
+  border-right:2px solid #fff;
+  margin:5% auto 0 auto;
+  background:url("/images/fallVegetables.jpg");
+  background-size:cover;
+  border-radius:5px;
+  overflow:hidden;
+}
 
+#overlayNW {
+  background:#FE9046;
+  text-align:center;
+  padding:90px 0 250px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
 
+#overlayNE {
+  background:#9F194E;
+  text-align:center;
+  padding:90px 0 250px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+#overlaySW {
+  background:#709452;
+  text-align:center;
+  padding:40px 0 290px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+#overlaySE {
+  background:#F7C74E;
+  text-align:center;
+  padding:70px 0 270px 0;
+  opacity:0;
+  -webkit-transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+}
+
+#boxNW:hover #overlayNW {
+  opacity:0.9;
+}
+
+#boxNE:hover #overlayNE {
+  opacity:0.9;
+}
+
+#boxSW:hover #overlaySW {
+  opacity:0.9;
+}
+
+#boxSE:hover #overlaySE {
+  opacity:0.9;
+}
+
+#fruitVegListNW a {
+  color: #FFFFFF;
+  text-decoration: none;
+  float: left;
+  width: 33%;
+}
+
+#fruitVegListNW a:hover {
+  color: #3B1A01;
+}
+
+#fruitVegListNE a {
+  color: #FFFFFF;
+  text-decoration: none;
+  float: left;
+  width: 33%;
+}
+
+#fruitVegListNE a:hover {
+  color: #F7C74E;
+}
+
+#fruitVegListSW a {
+  color: #FFFFFF;
+  text-decoration: none;
+  float: left;
+  width: 33%;
+}
+
+#fruitVegListSW a:hover {
+  color: #F7C74E;
+}
+
+#fruitVegListSE a {
+  color: #3B1A01;
+  text-decoration: none;
+  float: left;
+  width: 33%;
+}
+
+#fruitVegListSE a:hover {
+  color: #FFFFFF;
+}
+
+.footer {
+  background-color: #E7512D;
+  padding: 20px;
+  color: #F5ECC7;
+  font-size: 14px;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+#seasonTitle{
+  color:#FFFFFF;
+  text-align: center;
+  padding-top: 0px;
+}

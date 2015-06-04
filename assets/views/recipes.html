@@ -7,11 +7,11 @@
     </thead>
     <tbody>
 
-      <tr ng-repeat="recipe in results track by $index"  ng-if="recipe.StarRating >= 2" >
+      <tr ng-repeat="recipe in results track by $index" >
         <td><img ng-src="{{recipe.ImageURL120}}" class="img-responsive"></td>
         <td id="recipeTitle"><a ng-href="{{recipe.WebURL}}" target="_blank">{{recipe.Title}}</a></td>
         <td id="starRating"><rating ng-model="recipe.StarRating" max="5" readonly="true"></rating></td>
-        <td>{{recipe.StarRating}}</td>
+        <!-- <td>{{recipe.StarRating}}</td> -->
         <td><button ng-click="addRecipe(recipe)" class="btn RecipeSaveBtn">Save</button></td>
       </tr>
 

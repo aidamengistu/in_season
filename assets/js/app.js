@@ -35,6 +35,10 @@ ProduceApp.config(['$routeProvider', '$locationProvider',function($routeProvider
     templateUrl:'/views/savedRecipes.html',
     controller:'SavedRecipesCtrl'
   })
+  .when('/about',{
+    templateUrl:'/views/about.html',
+    controller:'AboutCtrl'
+  })
   .otherwise({
     templateUrl:'/views/404.html'
   })
