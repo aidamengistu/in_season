@@ -32,8 +32,19 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
+  '/': 'BigOvenApiController.index',
+
+  'get /api/auth':'AuthController.check',
+  'post /api/auth':'AuthController.login',
+  'delete /api/auth':'AuthController.logout',
+
+  'post /api/recipe':'RecipeController.create',
+
+  "get *":{
+    controller:"BigOvenApiController",
+    action:"index",
+    skipAssets: true,
+    skipRegex: /^\/api\/.*$/
   }
 
   /***************************************************************************

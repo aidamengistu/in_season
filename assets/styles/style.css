@@ -1,0 +1,244 @@
+h1 {
+  color: #655B58;
+  text-align: left;
+  font-weight: bolder;
+}
+
+h2 {
+  color: #253938;
+  text-align: center;
+  font-weight: bolder;
+}
+
+body {
+  font-family: 'Vollkorn', serif;
+  font-size: 20px;
+  background-color: #FAF9F8;
+  /*background-image: url("/images/background2.jpg");*/
+
+}
+/*
+body::after {
+  background-image: url("/images/background2.jpg");
+         background-repeat:repeat;
+            background-position:center;
+            background-attachment:fixed;
+            background-size:cover;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+}*/
+
+
+.NW a {
+  text-decoration: none;
+  color: #655B58;
+}
+
+.NE a {
+  text-decoration: none;
+  color: #655B58;
+}
+
+.SW a {
+  text-decoration: none;
+  color: #655B58;
+}
+
+.SE a {
+  text-decoration: none;
+  color: #655B58;
+}
+
+.NW a:hover {
+  color: #253938;
+}
+
+.NE a:hover {
+  color: #253938;
+}
+
+.SW a:hover {
+  color: #253938;
+}
+
+.SE a:hover {
+  color: #253938;
+}
+
+
+/*These are the four quadrants on the home page - Winter, Spring, Summer and Fall*/
+.NW {
+  /*background-color: #CBCBC1;*/
+  text-align: left;
+  /*position: absolute;*/
+  width: 40%;
+  height: 50%;
+  top:25%;
+  left:10%;
+ /* right:50%;
+  bottom:50%;*/
+  border-radius: 10px;
+  /*margin-right: 10px;*/
+  background-image: url("/images/grapefruit.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.NW img {
+  opacity: 0.2;
+}
+
+.NE {
+  /*background-color: #B6AEA1;*/
+  text-align: left;
+  /*position: absolute;*/
+  width: 40%;
+  height: 50%;
+  top:25%;
+  left:50%;
+  border-radius: 10px;
+  background-image: url("/images/greenBeans.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.SW {
+  /*background-color: #B6AEA1;*/
+  text-align: left;
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top:75%;
+  left:10%;
+  border-radius: 10px;
+  background-image: url("/images/berries.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  /*opacity: 0.2;*/
+}
+
+.SE {
+  /*background-color: #CBCBC1;*/
+  text-align: left;
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  top:75%;
+  left:50%;
+  border-radius: 10px;
+  background-image: url("/images/BrusselsSprouts.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+
+#fruitVegList {
+  float: left;
+  width: 33%;
+}
+
+#starRating {
+  color: #E7512D;
+}
+
+/*Navbar styling */
+.navbar {
+  background-color: #E7512D;
+  border-radius:10px;
+  height:75px;
+}
+
+.navbar .navbar-header a{
+  color: #253938;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #F5ECC7;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.container-fluid {
+  padding-top: 10px;
+}
+
+.zipCodeBtn {
+  background-color: #E7512D;
+  color: #F5ECC7;
+}
+
+/* accordion on farmer's markets search result page*/
+.panel-group .panel-heading {
+  color: #655B58;
+  background-color: #F5ECC7;
+}
+
+.panel-body {
+  color:#312f27;
+  background-color: #C4BC9F;
+}
+
+.panel-title {
+  font-size: 18px;
+}
+
+label {
+  font-weight: bolder;
+}
+
+#recipeTitle a{
+  color: #655B58;
+  text-decoration: none;
+}
+
+#recipeTitle a:hover{
+  color: #000000;
+}
+
+.RecipeSaveBtn{
+  background-color: #E7512D;
+  color: #F5ECC7;
+}
+
+.RecipeDeleteBtn {
+  background-color: #CC2111;
+  color: #F5ECC7;
+}
+
+
+/*body    {  background:#e7e7e7;}
+#box    {  width:300px;
+           height:200px;
+           box-shadow:inset 1px 1px 40px 0 rgba(0,0,0,.45);
+          border-bottom:2px solid #fff;
+          border-right:2px solid #fff;
+          margin:5% auto 0 auto;
+          background:url("/images/grapefruit.jpg");
+  background-size:cover;
+border-radius:5px;
+overflow:hidden;}
+
+#overlay    {  background:rgba(0,0,0,.75);
+               text-align:center;
+               padding:45px 0 66px 0;
+               opacity:0;
+               -webkit-transition: opacity .25s ease;
+-moz-transition: opacity .25s ease;}
+
+#box:hover #overlay {
+               opacity:1;}*/
+
+/*#plus       {  font-family:Helvetica;
+               font-weight:900;
+               color:rgba(255,255,255,.85);
+               font-size:96px;}*/
+
+

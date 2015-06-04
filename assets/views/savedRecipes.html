@@ -1,0 +1,19 @@
+<div class="container">
+
+<h1>Your saved recipes:</h1>
+  <table class="table">
+    <tbody>
+    <thead>
+
+    </thead>
+      <tr ng-repeat="savedRecipe in savedRecipes">
+        <td><img ng-src="{{savedRecipe.thumbnail}}" class="img-responsive"></td>
+        <td id="recipeTitle"><a ng-href="{{savedRecipe.url}}" target="_blank">{{savedRecipe.title}}</a></td>
+        <td id="starRating"><rating ng-model="savedRecipe.starRating" max="5" readonly="true"></rating></td>
+        <td><button ng-click="deleteRecipe($index)" class="btn RecipeDeleteBtn">Delete</button></td>
+      </tr>
+
+    </tbody>
+
+  </table>
+</div>

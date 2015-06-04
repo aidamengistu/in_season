@@ -1,0 +1,77 @@
+<div class="container" >
+  <h1>What's in season?</h1>
+
+  <div class = "row">
+    <div class = "col-xs-6 NW">
+    <h2>Winter</h2>
+    <br>
+      <div ng-repeat="p in produce">
+        <a id = "fruitVegList" ng-if="p.season == 'Winter'" ng-href="/recipes/{{p.name}}">
+          {{p.name}}<br>
+        </a>
+      </div>
+    </div>
+
+    <div class = "col-xs-6 NE">
+    <h2>Spring</h2>
+    <br>
+      <div ng-repeat="p in produce">
+        <a id = "fruitVegList" ng-if="p.season == 'Spring'" ng-href="/recipes/{{p.name}}">
+          {{p.name}}<br>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class = "row">
+    <div class = "col-xs-6 SW">
+    <h2>Summer</h2>
+    <br>
+      <div ng-repeat="p in produce">
+        <a id = "fruitVegList" ng-if="p.season == 'Summer'" ng-href="/recipes/{{p.name}}">
+          {{p.name}}<br>
+        </a>
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "col-xs-6 SE">
+      <h2>Fall</h2>
+      <br>
+        <div ng-repeat="p in produce">
+          <a id = "fruitVegList" ng-if="p.season == 'Fall'" ng-href="/recipes/{{p.name}}">
+            {{p.name}}<br>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+
+<!--     This searches the Big Oven API for a searchWord entered by the user
+    <h3>Don't see your fruit or veggie?  Search for it here: </h3>  -->
+<!--   <form class="form" ng-submit="search()">
+    <div class="form-group">
+    <label class="control-label">Search for </label>
+      <input type="text" ng-model="searchWord" class="form-control" placeholder="Enter a fruit or veggie">
+    </div>
+    <input type="submit" class="btn btn-primary">
+  </form> -->
+
+
+<!-- </div> -->
+<!--
+<div id="box">
+
+  <div id="overlay">
+    <div id="plus"><div ng-repeat="p in produce">
+        <a id = "fruitVegList" ng-if="p.season == 'Winter'" ng-href="/recipes/{{p.name}}">
+          {{p.name}}<br>
+        </a>
+      </div></div>
+  </div> -->
+
+</div>
+
+
+
+
