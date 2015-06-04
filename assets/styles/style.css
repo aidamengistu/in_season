@@ -16,6 +16,13 @@ body {
   background-color: #FAF9F8;
 }
 
+.IntroLine {
+  text-align: center;
+  font-style: italic;
+  color: #E7512D;
+  font-weight: bolder;
+}
+
 #starRating {
   color: #E7512D;
 }
@@ -201,6 +208,8 @@ label {
   text-decoration: none;
   float: left;
   width: 33%;
+  text-align: left;
+  padding-left: 40px;
 }
 
 #fruitVegListNW a:hover {
@@ -212,6 +221,8 @@ label {
   text-decoration: none;
   float: left;
   width: 33%;
+  text-align: left;
+  padding-left: 20px;
 }
 
 #fruitVegListNE a:hover {
@@ -223,6 +234,8 @@ label {
   text-decoration: none;
   float: left;
   width: 33%;
+  text-align: left;
+  padding-left: 20px;
 }
 
 #fruitVegListSW a:hover {
@@ -234,6 +247,8 @@ label {
   text-decoration: none;
   float: left;
   width: 33%;
+  text-align: left;
+  padding-left: 20px;
 }
 
 #fruitVegListSE a:hover {
@@ -254,4 +269,12 @@ label {
   color:#FFFFFF;
   text-align: center;
   padding-top: 0px;
+}
+
+.profilePhoto img {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 20px;
+  border: solid white;
 }

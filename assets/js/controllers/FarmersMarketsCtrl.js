@@ -2,23 +2,9 @@ ProduceApp.controller('FarmersMarketsCtrl',['$scope','$routeParams','$http',func
 
   console.log("Farmers Markets Controller loaded!");
 
-
-
   $scope.marketDetails = {};
 
   $scope.search = function(){
-    alert('search loading');
-    console.log('search loading');
-    // var req = {
-    //   url:'//search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch',
-    //   params: {
-    //     zip:$scope.zip
-    //   }
-    // };
-
-    // $http(req).success(function(data){
-    //   $scope.markets = data.results;
-    // });
     var zipData = {zip:$scope.zip}
     $http.post('/api/farmersMarketData', zipData)
     .success(function(data){
@@ -40,20 +26,6 @@ ProduceApp.controller('FarmersMarketsCtrl',['$scope','$routeParams','$http',func
     .error(function(err){
       console.log('error:', err);
     })
-
-    // if(!$scope.marketDetails[marketId]){
-    //   var req = {
-    //     url:'http://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail',
-    //     params: {
-    //       id:marketId
-    //     }
-    //   };
-
-    //   $http(req).success(function(data){
-    //     $scope.marketDetails[marketId] = data.marketdetails;
-    //   });
-
-    // }
 
   }
 
