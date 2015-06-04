@@ -7,7 +7,7 @@ ProduceApp.controller('FarmersMarketsCtrl',['$scope','$routeParams','$http',func
   $scope.search = function(){
 
     var req = {
-      url:'http://search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch',
+      url:'//search.ams.usda.gov/farmersmarkets/v1/data.svc/zipSearch',
       params: {
         zip:$scope.zip
       }
@@ -24,7 +24,7 @@ ProduceApp.controller('FarmersMarketsCtrl',['$scope','$routeParams','$http',func
 
     if(!$scope.marketDetails[marketId]){
       var req = {
-        url:'http://search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail',
+        url:'//search.ams.usda.gov/farmersmarkets/v1/data.svc/mktDetail',
         params: {
           id:marketId
         }
