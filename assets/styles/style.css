@@ -1,3 +1,8 @@
+html {
+  position: relative; /*Adding these two lines to make the footer stick to the bottom of the page*/
+  min-height: 100%;
+}
+
 h1 {
   color: #655B58;
   text-align: left;
@@ -14,6 +19,7 @@ body {
   font-family: 'Vollkorn', serif;
   font-size: 20px;
   background-color: #FAF9F8;
+  margin: 0 0 50px; /* Adding this line to make the footer stick to the bottom of the page.  60px is the height of the footer*/
 }
 
 .IntroLine {
@@ -26,6 +32,10 @@ body {
 
 #starRating {
   color: #E7512D;
+}
+
+.SECol {
+  padding-right: 45px;
 }
 
 /*Navbar styling */
@@ -273,14 +283,25 @@ label {
   color: #FFFFFF;
 }
 
+.bottomRow {
+  padding-bottom: 50px;
+}
+
 .footer {
   background-color: #E7512D;
   padding: 20px;
   color: #F5ECC7;
   font-size: 14px;
   border-radius: 10px;
-  margin-top: 40px;
+  /*margin-top: 50px;*/
   margin-bottom: 10px;
+  position: absolute; /*This line and the following 4 lines are added to make the footer stick to the bottom*/
+  left:0;
+  bottom: 0;
+  height: 50px;
+  width: 85%;
+  margin-right: 70px;
+  margin-left: 100px;
 }
 
 #seasonTitle{
@@ -326,7 +347,6 @@ label {
        float: none;
        margin: 15px 0;
    }
-   /* since 3.1.0 */
    .navbar-collapse.collapse.in {
        display: block!important;
    }
