@@ -11,7 +11,7 @@
 
 <hr>
 <accordion close-others="true">
-  <accordion-group ng-repeat="market in markets" ng-click="details(market.id)" heading="{{market.marketname}}">
+  <accordion-group ng-repeat="market in markets" ng-click="details(market.id)" heading="{{market.marketname}}" >
     <div ng-show="marketDetails[market.id]">
       <label>Address:</label> {{marketDetails[market.id].Address}}<br>
       <label>Schedule:</label> {{marketDetails[market.id].Schedule | limitTo:46}}<br>
