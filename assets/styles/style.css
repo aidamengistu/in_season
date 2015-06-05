@@ -306,6 +306,14 @@ label {
   border: solid 4px #E7512D;
 }
 
+p.aboutMe {
+  text-align: justify;
+}
+
+p.aboutMe a {
+  text-decoration: none;
+}
+
 @media (max-width: 1088px) {
    .navbar-header {
        float: none;
