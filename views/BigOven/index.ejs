@@ -1,29 +1,35 @@
 <div class="container" ng-app="ProduceApp" ng-controller="NavCtrl">
-  <nav class="navbar navbar-default" >
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
+      <button ng-click="navCollapsed=!navCollapsed" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="/">In Season</a>
       </div>
-      <div>
-        <ul class="nav navbar-nav">
-          <li><a href="/">Home</a></li>
-          <li><a ng-href="/markets">Find a Farmer's Market </a></li>
-          <li><a ng-href="/savedRecipes">My Saved Recipes</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-        <ul class="nav navbar-nav pull-right" >
-          <li><a href="#" ng-click="showLogin()" ng-hide="currentUser">Login</a></li>
-          <li><a ng-show="currentUser">Welcome {{currentUser.firstName || 'User'}}! </a></li>
-          <li><a href="#" ng-click="logout()" ng-show="currentUser">Logout</a>
-        </ul>
-
+      <div collapse="navCollapsed" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a ng-href="/markets">Find a Farmer's Market </a></li>
+            <li><a ng-href="/savedRecipes">My Saved Recipes</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav pull-right" >
+            <li><a href="#" ng-click="showLogin()" ng-hide="currentUser">Login</a></li>
+            <li><a ng-show="currentUser">Welcome {{currentUser.firstName || 'User'}}! </a></li>
+            <li><a href="#" ng-click="logout()" ng-show="currentUser">Logout</a></li>
+          </ul>
         </div>
       </div>
+  </nav>
 
-    </nav>
-    <ng-view></ng-view>
 
-    <div class="footer">
-      &copy; 2015 In Season Fresh Fruits and Veggies
-    </div>
+  <ng-view></ng-view>
+
+  <div class="footer">
+    &copy; 2015 In Season Fresh Fruits and Veggies
   </div>
+</div>

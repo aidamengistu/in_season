@@ -24,7 +24,6 @@ $scope.search = function(searchWord){
   };
 
   $http(req).success(function(data){
-    console.log('here is your recipe', data);
     $scope.results = data.Results;
   });
 

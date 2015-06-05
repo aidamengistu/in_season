@@ -1,5 +1,5 @@
 ProduceApp.controller('NavCtrl',['$scope','$rootScope','$modal','UserService',function($scope,$rootScope,$modal,UserService){
-  // console.log('nav controller loaded.');
+  $scope.navCollapsed=true;
   $scope.UserService = UserService;
 
 

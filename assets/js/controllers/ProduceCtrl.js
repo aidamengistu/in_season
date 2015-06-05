@@ -42,7 +42,6 @@ ProduceApp.controller('ProduceCtrl',['$scope','$routeParams','$http','UserServic
 
 
    $http(req).success(function(data){
-      // $location.path(data.WebURL);
       alert("Saved!");
       console.log('heller', data);
     }).error(function(err){

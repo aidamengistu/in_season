@@ -17,9 +17,6 @@
       ,function (error, response, body) {
         if (!error && response.statusCode == 200) {
           res.send(JSON.parse(body));
-          console.log(body)
-        } else {
-          console.log ('not working');
         }
       })
   },
@@ -32,9 +29,6 @@
      ,function (error, response, body) {
       if (!error && response.statusCode == 200) {
         res.send(JSON.parse(body));
-        console.log(body)
-      } else {
-        console.log ('not working');
       }
     })
 
