@@ -7,7 +7,7 @@
     </thead>
     <tbody>
 
-      <tr ng-repeat="recipe in results track by $index" >
+      <tr ng-repeat="recipe in results track by $index" ng-if="recipe.StarRating >= 1">
         <td><img ng-src="{{recipe.ImageURL120}}" class="img-responsive"></td>
         <td id="recipeTitle"><a ng-href="{{recipe.WebURL}}" target="_blank">{{recipe.Title}}</a></td>
         <td id="category">{{recipe.Category}}</td>
