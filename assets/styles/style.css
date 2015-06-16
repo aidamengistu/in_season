@@ -54,8 +54,8 @@ body {
 
 .navbar-default .navbar-nav li a {
   color: #F5ECC7;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-collapse{
@@ -72,6 +72,11 @@ body {
 }
 
 .loginBtn {
+  background-color: #E7512D;
+  color: #F5ECC7;
+}
+
+.signupBtn {
   background-color: #E7512D;
   color: #F5ECC7;
 }

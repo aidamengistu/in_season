@@ -14,7 +14,14 @@ ProduceApp.controller('NavCtrl',['$scope','$rootScope','$modal','UserService',fu
     UserService.logout(function(err, data){
       //doing nothing...
     });
-  }
+  };
+
+  $scope.showSignup = function(){
+    $modal.open({
+      templateUrl:'/views/auth/signupmodal.html',
+      controller:'AuthLoginModalCtrl'
+    });
+  };
 
   $scope.$watchCollection('UserService',function(){
     $scope.currentUser = UserService.currentUser;

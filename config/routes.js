@@ -37,6 +37,7 @@ module.exports.routes = {
   'get /api/auth':'AuthController.check',
   'post /api/auth':'AuthController.login',
   'delete /api/auth':'AuthController.logout',
+  // 'post api/auth':'AuthController.signup',
 
   'post /api/farmersMarketData':'FarmersMarketsController.farmersMarketData',
   'post /api/farmersMarketFinalData':'FarmersMarketsController.farmersMarketFinalData',

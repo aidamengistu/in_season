@@ -28,7 +28,7 @@ ProduceApp.controller('ProduceCtrl',['$scope','$routeParams','$http','UserServic
   $scope.addRecipe = function(recipe){
 
     if(!UserService.currentUser){
-      alert('You must be logged in!')
+      alert('Please login first to save this recipe!')
       return;
     }
 

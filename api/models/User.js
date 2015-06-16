@@ -15,7 +15,8 @@ module.exports = {
       unique:true
     },
     firstName:{
-      type:'string'
+      type:'string',
+      required:true
     },
     lastName:{
       type:'string'

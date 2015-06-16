@@ -33,7 +33,7 @@ module.exports = {
       }else {
         res.send({
           result: false,
-          error: 'Unknown User.'
+          error: 'Unknown User.  Please sign up.'
         });
       }
     })

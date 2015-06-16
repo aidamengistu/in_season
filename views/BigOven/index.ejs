@@ -12,15 +12,17 @@
       </div>
       <div collapse="navCollapsed" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li><a href="/">Home</a></li>
             <li><a ng-href="/markets">Find a Farmer's Market </a></li>
-            <li><a ng-href="/savedRecipes">My Saved Recipes</a></li>
+            <li><a ng-href="/savedRecipes" ng-show="currentUser">My Saved Recipes</a></li>
             <li><a href="/about">About</a></li>
           </ul>
           <ul class="nav navbar-nav pull-right" >
             <li><a href="#" ng-click="showLogin()" ng-hide="currentUser">Login</a></li>
-            <li><a ng-show="currentUser">Welcome {{currentUser.firstName || 'User'}}! </a></li>
+            <li><a ng-show="currentUser">Hello {{currentUser.firstName || 'User'}}! </a></li>
             <li><a href="#" ng-click="logout()" ng-show="currentUser">Logout</a></li>
+          </ul>
+          <ul class="nav navbar-nav pull-right">
+          <li><a href="#" ng-click="showSignup()">Sign up</a></li>
           </ul>
         </div>
       </div>
